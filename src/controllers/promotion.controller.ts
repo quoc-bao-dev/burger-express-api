@@ -42,13 +42,13 @@ class PromotionController {
             result = promotion;
         }
 
-        const respone = createResponse({
+        const response = createResponse({
             statusCode: 201,
-            message: 'Create promotion for dish successfuly!',
+            message: 'Create promotion for dish successfully!',
             data: result,
         });
 
-        res.status(respone.statusCode).json(respone);
+        res.status(response.statusCode).json(response);
     }
 }
 

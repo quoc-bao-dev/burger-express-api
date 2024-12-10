@@ -16,7 +16,7 @@ class AuthController {
 
         const response = createResponse({
             statusCode: 200,
-            message: 'Register successfuly!',
+            message: 'Register successfully!',
             data: payload,
         });
 
@@ -29,7 +29,7 @@ class AuthController {
 
         const response = createResponse({
             statusCode: 200,
-            message: 'Login successfuly!',
+            message: 'Login successfully!',
             data: payload,
         });
 
@@ -39,7 +39,7 @@ class AuthController {
     async me(req: Request, res: Response) {
         res.status(200).json({
             statusCode: 200,
-            message: 'Successfuly!',
+            message: 'Successfully!',
             data: ['req.user'],
         });
     }

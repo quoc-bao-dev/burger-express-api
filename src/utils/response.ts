@@ -1,10 +1,10 @@
-import { PaginagtionParams } from '../core/ApiResponseWithPagination';
+import { PaginationParams } from '../core/ApiResponseWithPagination';
 import ApiResponse from '../core/ApiResponse';
 import ApiResponseWithPagination from '../core/ApiResponseWithPagination';
 
 export const createResponse = ({
     statusCode = 200,
-    message = 'Successfuly!',
+    message = 'Successfully!',
     data,
 }: {
     statusCode?: number;
@@ -16,14 +16,14 @@ export const createResponse = ({
 
 export const createResponseWithPagination = ({
     statusCode = 200,
-    message = 'Successfuly!',
+    message = 'Successfully!',
     data = null,
-    pagination = {} as PaginagtionParams,
+    pagination = {} as PaginationParams,
 }: {
     statusCode?: number;
     message?: string;
     data?: any;
-    pagination?: PaginagtionParams;
+    pagination?: PaginationParams;
 }) => {
     return ApiResponseWithPagination.createResponse(
         statusCode,

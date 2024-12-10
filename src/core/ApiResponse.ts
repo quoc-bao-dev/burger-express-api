@@ -10,7 +10,7 @@ class ApiResponse<T> {
 
     static create(
         statusCode: number,
-        message: string = 'Successfuly!',
+        message: string = 'Successfully!',
         data = null
     ) {
         return new ApiResponse(statusCode, message, data);

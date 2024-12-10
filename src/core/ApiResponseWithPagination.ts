@@ -1,6 +1,6 @@
 import ApiResponse from './ApiResponse';
 
-export interface PaginagtionParams {
+export interface PaginationParams {
     total: number;
     limit: number;
     page: number;
@@ -20,7 +20,7 @@ class ApiResponseWithPagination<T> extends ApiResponse<T> {
         statusCode: number,
         message: string,
         data: T,
-        pagination: PaginagtionParams
+        pagination: PaginationParams
     ) {
         super(statusCode, message, data);
         this.pagination = {

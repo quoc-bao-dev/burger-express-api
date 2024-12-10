@@ -19,12 +19,14 @@
         "jsonwebtoken": "^9.0.2",
         "lodash": "^4.17.21",
         "mongoose": "^8.8.3",
-        "morgan": "^1.10.0"
+        "morgan": "^1.10.0",
+        "winston": "^3.17.0"
     },
     "devDependencies": {
         "@types/bcrypt": "^5.0.2",
         "@types/cors": "^2.8.17",
         "@types/jsonwebtoken": "^9.0.7",
-        "@types/lodash": "^4.17.13"
+        "@types/lodash": "^4.17.13",
+        "@types/winston": "^2.4.4"
     }
 }

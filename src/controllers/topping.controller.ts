@@ -8,7 +8,7 @@ class ToppingController {
         const toppings = await ToppingService.getAll();
         const response = createResponse({
             statusCode: 200,
-            message: 'Get all toppings successfuly!',
+            message: 'Get all toppings successfully!',
             data: toppings,
         });
         res.status(response.statusCode).json(response);
@@ -25,7 +25,7 @@ class ToppingController {
         });
         const response = createResponse({
             statusCode: 200,
-            message: 'Create topping successfuly!',
+            message: 'Create topping successfully!',
             data: topping,
         });
 
@@ -41,7 +41,7 @@ class ToppingController {
         );
         const response = createResponse({
             statusCode: 200,
-            message: 'Add dish to topping successfuly!',
+            message: 'Add dish to topping successfully!',
             data: topping,
         });
 
@@ -56,7 +56,7 @@ class ToppingController {
         );
         const response = createResponse({
             statusCode: 200,
-            message: 'Remove dish from topping successfuly!',
+            message: 'Remove dish from topping successfully!',
             data: topping,
         });
 
